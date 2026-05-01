@@ -12,12 +12,17 @@ namespace Calendar_System
 {
     public partial class Manager : Form
     {
-        public Manager()
+        public Manager(int EmployeeID)
         {
             InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
         {
 
         }

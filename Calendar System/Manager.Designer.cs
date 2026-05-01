@@ -185,10 +185,10 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.meetingsBox);
             this.splitContainer1.Panel2.Controls.Add(this.editEventBox);
             this.splitContainer1.Panel2.Controls.Add(this.addEventBox);
             this.splitContainer1.Panel2.Controls.Add(this.selectedMeetingBox);
-            this.splitContainer1.Panel2.Controls.Add(this.meetingsBox);
             this.splitContainer1.Size = new System.Drawing.Size(1771, 893);
             this.splitContainer1.SplitterDistance = 1404;
             this.splitContainer1.TabIndex = 1;
@@ -288,6 +288,7 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(1398, 807);
             this.tableLayoutPanel7.TabIndex = 1;
+            this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
             // 
             // button34
             // 
