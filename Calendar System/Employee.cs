@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,18 @@ namespace Calendar_System
         //user selected date to view meetings
         private DateTime selectedDate;
         private List<Event> allEvents = new List<Event>();
-        public Employee(int EmployeeID)
+        //current user ID
+        private int userID;
+        //database reference
+        private Database db;
+        public Employee(int userID, Database db)
         {
             InitializeComponent();
+            //store userID and database reference for later use
+            this.userID = userID;
+            this.db = db;
+
+            //update selected date label to current date
             selectedDateL.Text = currentDateTime.ToString("M/d/yyyy");
 
             //organize group boxes
@@ -40,6 +50,9 @@ namespace Calendar_System
         private void MainMenu_Load(object sender, EventArgs e)
         {
             selectedDate = currentDateTime.Date;
+
+            allEvents = db.GetEventsForUserInMonth(userID, currentDateTime.Month, currentDateTime.Year);
+
             UpdateCalendar();
             LoadMeetingsForSelectedDate();
         }
@@ -48,41 +61,52 @@ namespace Calendar_System
         {
             calendarButtons.Clear();
 
-            foreach (Control c in calendarPanel.Controls)
+            // loop through rows and columns manually
+            for (int row = 0; row < calendarPanel.RowCount; row++)
             {
-                if (c is Button)
+                for (int col = 0; col < calendarPanel.ColumnCount; col++)
                 {
-                    calendarButtons.Add((Button)c);
+                    Control c = calendarPanel.GetControlFromPosition(col, row);
+
+                    if (c is Button)
+                    {
+                        calendarButtons.Add((Button)c);
+                    }
                 }
             }
 
-            //reverse list to match calendar layout (Sunday button is last in panel but should be first in list)
-            calendarButtons.Reverse();
             DateTime firstDay = new DateTime(currentDateTime.Year, currentDateTime.Month, 1);
 
-            int startIndex = (int)firstDay.DayOfWeek;
-            int daysInMonth = DateTime.DaysInMonth(currentDateTime.Year, currentDateTime.Month);
+            // go backwards until Sunday
+            DateTime startDate = firstDay;
 
-            //clear buttons
-            foreach (var btn in calendarButtons)
+            while (startDate.DayOfWeek != DayOfWeek.Sunday)
             {
-                btn.Text = "";
-                btn.Enabled = false;
+                startDate = startDate.AddDays(-1);
             }
 
-            //set day numbers
-            for (int i = 0; i < daysInMonth; i++)
+            for (int i = 0; i < calendarButtons.Count; i++)
             {
-                int buttonIndex = startIndex + i + 1;
+                DateTime thisDate = startDate.AddDays(i);
 
-                if (buttonIndex >= calendarButtons.Count)
-                    break;
+                Button btn = calendarButtons[i];
 
-                calendarButtons[buttonIndex].Text = (i + 1).ToString();
-                calendarButtons[buttonIndex].Enabled = true;
+                btn.Text = thisDate.Day.ToString();
+                btn.Enabled = true;
+
+                //store full date in tag
+                btn.Tag = thisDate;
+                //gray btn not in this month
+                if (thisDate.Month != currentDateTime.Month)
+                {
+                    btn.ForeColor = Color.LightGray;
+                }
+                else
+                {
+                    btn.ForeColor = Color.Black;
+                }
             }
 
-            //update month label
             monthL.Text = currentDateTime.ToString("MMMM yyyy");
         }
         private void UpdateCalendar()
@@ -95,29 +119,53 @@ namespace Calendar_System
                     continue;
                 }
 
-                int day = Convert.ToInt32(btn.Text);
-
-                DateTime thisDate = new DateTime(currentDateTime.Year, currentDateTime.Month, day);
+                DateTime thisDate = (DateTime)btn.Tag;
 
                 //color rules
                 if (thisDate.Date == selectedDate.Date)
                 {
                     btn.BackColor = Color.LightGray;
+                    btn.ForeColor = Color.Black;
                 }
-                else if (HasEventOnThisDate(thisDate))
+                else if (HasEventOnDate(thisDate))
                 {
                     btn.BackColor = Color.LightBlue;
+                    //gray btn not in this month
+                    if (thisDate.Month != currentDateTime.Month)
+                    {
+                        btn.ForeColor = Color.LightGray;
+                    }
+                    else
+                    {
+                        btn.ForeColor = Color.Black;
+                    }
                 }
                 else
                 {
                     btn.BackColor = Color.White;
+                    //gray btn not in this month
+                    if (thisDate.Month != currentDateTime.Month)
+                    {
+                        btn.ForeColor = Color.LightGray;
+                    }
+                    else
+                    {
+                        btn.ForeColor = Color.Black;
+                    }
                 }
             }
         }
-        //checks if event on date
-        private bool HasEventOnThisDate(DateTime date)
+        //check if there are meetings on a given date
+        private bool HasEventOnDate(DateTime date)
         {
-            return allEvents.Any(e => e.StartTime.Date == date.Date);
+            foreach (Event e in allEvents)
+            {
+                if (e.StartTime.Date == date.Date)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
         //load meetings for selected date when date button is clicked
         private void DateButton_Click(object sender, EventArgs e)
@@ -129,11 +177,9 @@ namespace Calendar_System
             {
                 return;
             }
-            //convert text to day
-            int day = Convert.ToInt32(clicked.Text);
 
-            //create date from day, month, year
-            selectedDate = new DateTime(currentDateTime.Year, currentDateTime.Month, day);
+            DateTime selected = (DateTime)clicked.Tag;
+            selectedDate = selected;
 
             //update selected date label
             selectedDateL.Text = selectedDate.ToString("M/d/yyyy");
@@ -153,17 +199,9 @@ namespace Calendar_System
         }
         private void LoadMeetingsForSelectedDate()
         {
-            //meetings from db (temp test data for now)
-            List<Event> events = new List<Event>();
-
             //find meetings on selected date
-            foreach (Event e in allEvents)
-            {
-                if (e.StartTime.Date == selectedDate.Date)
-                {
-                    events.Add(e);
-                }
-            }
+            List<Event> events = db.GetEventsForUserOnDate(userID, selectedDate);
+
             //clear previous buttons
             meetingListBox.Controls.Clear();
 
@@ -247,30 +285,19 @@ namespace Calendar_System
                 return;
             }
             //can schedule (no time conflicts)
-            // check for time conflicts
-            foreach (Event ev in allEvents)
+            //check for time conflicts
+            List<Event> events = db.GetEventsForUserOnDate(userID, selectedDate);
+
+            foreach (Event ev in events)
             {
-                if (ev.StartTime.Date == selectedDate.Date)
+                if (startTime < ev.EndTime && endTime > ev.StartTime)
                 {
-                    if (startTime < ev.EndTime && endTime > ev.StartTime)
-                    {
-                        MessageBox.Show("Time conflict with another event.");
-                        return;
-                    }
+                    MessageBox.Show("Time conflict with another event.");
+                    return;
                 }
             }
-            //create event
-            Event newEvent = new Event
-            {
-                EventID = allEvents.Count + 1,
-                Title = title,
-                StartTime = startTime,
-                EndTime = endTime,
-                Description = description
-            };
-
-            //store it
-            allEvents.Add(newEvent);
+            //call database method to add event
+            db.AddEvent(userID, title, startTime, endTime, description);
 
             //refresh UI
             UpdateCalendar();
@@ -305,6 +332,9 @@ namespace Calendar_System
         {
             currentDateTime = currentDateTime.AddMonths(-1);
 
+            //update events for new month
+            allEvents = db.GetEventsForUserInMonth(userID, currentDateTime.Month, currentDateTime.Year);
+
             //set selected date to first of month to avoid issues with months that have less days
             selectedDate = new DateTime(currentDateTime.Year, currentDateTime.Month, 1);
 
@@ -316,6 +346,9 @@ namespace Calendar_System
         private void nextMonth_Click(object sender, EventArgs e)
         {
             currentDateTime = currentDateTime.AddMonths(1);
+
+            //update events for new month
+            allEvents = db.GetEventsForUserInMonth(userID, currentDateTime.Month, currentDateTime.Year);
 
             //set selected date to first of month to avoid issues with months that have less days
             selectedDate = new DateTime(currentDateTime.Year, currentDateTime.Month, 1);

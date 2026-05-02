@@ -12,7 +12,7 @@ namespace Calendar_System
 {
     public partial class Manager : Form
     {
-        public Manager(int EmployeeID)
+        public Manager(int EmployeeID, Database db)
         {
             InitializeComponent();
         }

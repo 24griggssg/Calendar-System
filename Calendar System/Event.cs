@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calendar_System
 {
-    internal class Event
+    public class Event
     {
         public int EventID { get; set; }
         public string Title { get; set; } = string.Empty;

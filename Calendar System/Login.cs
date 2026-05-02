@@ -12,37 +12,36 @@ namespace Calendar_System
 {
     public partial class Login : Form
     {
-        public String username = "Admin";
-        public String password = "Password";
-        public bool isManager = false;
-        public const int EmployeeID = 1;
+        public Database db = new Database();
 
         public Login()
         {
             InitializeComponent();
-            //get values from database here and set username, password, and isManager
         }
         //login button
         private void confirmButton_Click(object sender, EventArgs e)
         {
             String inputUsername = textBox1.Text;
             String inputPassword = textBox2.Text;
-
-            if (inputUsername == username && inputPassword == password)
+            //calls the Login method in the Database class, which returns a tuple with three values: success, isManager, and employeeID
+            var result = db.Login(inputUsername, inputPassword);
+            if (result.success)
             {
-                if (isManager)
+                //loads the appropriate form based on whether the user is a manager or not
+                if (result.isManager)
                 {
-                    Manager managerForm = new Manager(EmployeeID);
+                    Manager managerForm = new Manager(result.userID, db);
                     managerForm.Show();
                     this.Hide();
                 }
                 else
                 {
-                    Employee employeeForm = new Employee(EmployeeID);
+                    Employee employeeForm = new Employee(result.userID, db);
                     employeeForm.Show();
                     this.Hide();
                 }
             }
+            //if login fails, show error message and clear textboxes
             else
             {
                 MessageBox.Show("Incorrect username or password. Please try again.");
