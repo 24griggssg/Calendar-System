@@ -165,7 +165,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.tableLayoutPanel1.RowCount = 2;
@@ -178,7 +178,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(17, 139);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -205,7 +205,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel7, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 98F));
@@ -282,7 +282,7 @@
             this.tableLayoutPanel7.Controls.Add(this.button35, 6, 5);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(4, 102);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 6;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
@@ -302,7 +302,7 @@
             this.button34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button34.Location = new System.Drawing.Point(1064, 750);
-            this.button34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button34.Margin = new System.Windows.Forms.Padding(4);
             this.button34.Name = "button34";
             this.button34.Size = new System.Drawing.Size(204, 160);
             this.button34.TabIndex = 41;
@@ -317,7 +317,7 @@
             this.button33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button33.Location = new System.Drawing.Point(852, 750);
-            this.button33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button33.Margin = new System.Windows.Forms.Padding(4);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(204, 160);
             this.button33.TabIndex = 40;
@@ -332,7 +332,7 @@
             this.button32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button32.Location = new System.Drawing.Point(640, 750);
-            this.button32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button32.Margin = new System.Windows.Forms.Padding(4);
             this.button32.Name = "button32";
             this.button32.Size = new System.Drawing.Size(204, 160);
             this.button32.TabIndex = 39;
@@ -347,7 +347,7 @@
             this.button31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button31.Location = new System.Drawing.Point(428, 750);
-            this.button31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button31.Margin = new System.Windows.Forms.Padding(4);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(204, 160);
             this.button31.TabIndex = 38;
@@ -362,7 +362,7 @@
             this.button30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button30.Location = new System.Drawing.Point(216, 750);
-            this.button30.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button30.Margin = new System.Windows.Forms.Padding(4);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(204, 160);
             this.button30.TabIndex = 37;
@@ -377,7 +377,7 @@
             this.button29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button29.Location = new System.Drawing.Point(4, 750);
-            this.button29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button29.Margin = new System.Windows.Forms.Padding(4);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(204, 160);
             this.button29.TabIndex = 36;
@@ -392,7 +392,7 @@
             this.button28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button28.Location = new System.Drawing.Point(1276, 582);
-            this.button28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button28.Margin = new System.Windows.Forms.Padding(4);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(210, 160);
             this.button28.TabIndex = 35;
@@ -407,7 +407,7 @@
             this.button27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button27.Location = new System.Drawing.Point(1064, 582);
-            this.button27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button27.Margin = new System.Windows.Forms.Padding(4);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(204, 160);
             this.button27.TabIndex = 34;
@@ -422,7 +422,7 @@
             this.button26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button26.Location = new System.Drawing.Point(852, 582);
-            this.button26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button26.Margin = new System.Windows.Forms.Padding(4);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(204, 160);
             this.button26.TabIndex = 33;
@@ -437,7 +437,7 @@
             this.button25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button25.Location = new System.Drawing.Point(640, 582);
-            this.button25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button25.Margin = new System.Windows.Forms.Padding(4);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(204, 160);
             this.button25.TabIndex = 32;
@@ -452,7 +452,7 @@
             this.button24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button24.Location = new System.Drawing.Point(428, 582);
-            this.button24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button24.Margin = new System.Windows.Forms.Padding(4);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(204, 160);
             this.button24.TabIndex = 31;
@@ -467,7 +467,7 @@
             this.button23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button23.Location = new System.Drawing.Point(216, 582);
-            this.button23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button23.Margin = new System.Windows.Forms.Padding(4);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(204, 160);
             this.button23.TabIndex = 30;
@@ -482,7 +482,7 @@
             this.button22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button22.Location = new System.Drawing.Point(4, 582);
-            this.button22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button22.Margin = new System.Windows.Forms.Padding(4);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(204, 160);
             this.button22.TabIndex = 29;
@@ -497,7 +497,7 @@
             this.button21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button21.Location = new System.Drawing.Point(1276, 414);
-            this.button21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button21.Margin = new System.Windows.Forms.Padding(4);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(210, 160);
             this.button21.TabIndex = 28;
@@ -512,7 +512,7 @@
             this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button20.Location = new System.Drawing.Point(1064, 414);
-            this.button20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button20.Margin = new System.Windows.Forms.Padding(4);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(204, 160);
             this.button20.TabIndex = 27;
@@ -527,7 +527,7 @@
             this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button19.Location = new System.Drawing.Point(852, 414);
-            this.button19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button19.Margin = new System.Windows.Forms.Padding(4);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(204, 160);
             this.button19.TabIndex = 26;
@@ -542,7 +542,7 @@
             this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button18.Location = new System.Drawing.Point(640, 414);
-            this.button18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button18.Margin = new System.Windows.Forms.Padding(4);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(204, 160);
             this.button18.TabIndex = 25;
@@ -557,7 +557,7 @@
             this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button17.Location = new System.Drawing.Point(428, 414);
-            this.button17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button17.Margin = new System.Windows.Forms.Padding(4);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(204, 160);
             this.button17.TabIndex = 24;
@@ -572,7 +572,7 @@
             this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button16.Location = new System.Drawing.Point(216, 414);
-            this.button16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button16.Margin = new System.Windows.Forms.Padding(4);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(204, 160);
             this.button16.TabIndex = 23;
@@ -587,7 +587,7 @@
             this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button15.Location = new System.Drawing.Point(4, 414);
-            this.button15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button15.Margin = new System.Windows.Forms.Padding(4);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(204, 160);
             this.button15.TabIndex = 22;
@@ -602,7 +602,7 @@
             this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button14.Location = new System.Drawing.Point(1276, 246);
-            this.button14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button14.Margin = new System.Windows.Forms.Padding(4);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(210, 160);
             this.button14.TabIndex = 21;
@@ -617,7 +617,7 @@
             this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button13.Location = new System.Drawing.Point(1064, 246);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(204, 160);
             this.button13.TabIndex = 20;
@@ -632,7 +632,7 @@
             this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button12.Location = new System.Drawing.Point(852, 246);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(204, 160);
             this.button12.TabIndex = 19;
@@ -647,7 +647,7 @@
             this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button11.Location = new System.Drawing.Point(640, 246);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(204, 160);
             this.button11.TabIndex = 18;
@@ -662,7 +662,7 @@
             this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button10.Location = new System.Drawing.Point(428, 246);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(204, 160);
             this.button10.TabIndex = 17;
@@ -677,7 +677,7 @@
             this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button9.Location = new System.Drawing.Point(216, 246);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(204, 160);
             this.button9.TabIndex = 16;
@@ -692,7 +692,7 @@
             this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button8.Location = new System.Drawing.Point(4, 246);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(204, 160);
             this.button8.TabIndex = 15;
@@ -707,7 +707,7 @@
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button7.Location = new System.Drawing.Point(1276, 78);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(210, 160);
             this.button7.TabIndex = 14;
@@ -722,7 +722,7 @@
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button6.Location = new System.Drawing.Point(1064, 78);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(204, 160);
             this.button6.TabIndex = 13;
@@ -737,7 +737,7 @@
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button5.Location = new System.Drawing.Point(852, 78);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(204, 160);
             this.button5.TabIndex = 12;
@@ -752,7 +752,7 @@
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button4.Location = new System.Drawing.Point(640, 78);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(204, 160);
             this.button4.TabIndex = 11;
@@ -767,7 +767,7 @@
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button3.Location = new System.Drawing.Point(428, 78);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(204, 160);
             this.button3.TabIndex = 10;
@@ -782,7 +782,7 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button2.Location = new System.Drawing.Point(216, 78);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(204, 160);
             this.button2.TabIndex = 9;
@@ -797,7 +797,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Location = new System.Drawing.Point(4, 78);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(204, 160);
             this.button1.TabIndex = 8;
@@ -910,7 +910,7 @@
             this.button35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button35.Location = new System.Drawing.Point(1276, 750);
-            this.button35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button35.Margin = new System.Windows.Forms.Padding(4);
             this.button35.Name = "button35";
             this.button35.Size = new System.Drawing.Size(210, 160);
             this.button35.TabIndex = 7;
@@ -924,9 +924,10 @@
             this.meetingsBox.Controls.Add(this.tableLayoutPanel8);
             this.meetingsBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.meetingsBox.Location = new System.Drawing.Point(0, 0);
-            this.meetingsBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.meetingsBox.Margin = new System.Windows.Forms.Padding(4);
+            this.meetingsBox.MinimumSize = new System.Drawing.Size(40, 10);
             this.meetingsBox.Name = "meetingsBox";
-            this.meetingsBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.meetingsBox.Padding = new System.Windows.Forms.Padding(4);
             this.meetingsBox.Size = new System.Drawing.Size(387, 1020);
             this.meetingsBox.TabIndex = 3;
             this.meetingsBox.TabStop = false;
@@ -941,7 +942,7 @@
             this.tableLayoutPanel8.Controls.Add(this.selectedDateL, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -972,7 +973,7 @@
             this.tableLayoutPanel9.Controls.Add(this.meeting1Button, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(4, 402);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 2;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -985,7 +986,7 @@
             this.addEventB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addEventB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.addEventB.Location = new System.Drawing.Point(4, 546);
-            this.addEventB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addEventB.Margin = new System.Windows.Forms.Padding(4);
             this.addEventB.Name = "addEventB";
             this.addEventB.Size = new System.Drawing.Size(363, 41);
             this.addEventB.TabIndex = 12;
@@ -997,7 +998,7 @@
             this.meeting1Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.meeting1Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.meeting1Button.Location = new System.Drawing.Point(4, 4);
-            this.meeting1Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.meeting1Button.Margin = new System.Windows.Forms.Padding(4);
             this.meeting1Button.Name = "meeting1Button";
             this.meeting1Button.Size = new System.Drawing.Size(363, 60);
             this.meeting1Button.TabIndex = 5;
@@ -1024,9 +1025,9 @@
             this.editEventBox.Controls.Add(this.tableLayoutPanel12);
             this.editEventBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editEventBox.Location = new System.Drawing.Point(0, 0);
-            this.editEventBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editEventBox.Margin = new System.Windows.Forms.Padding(4);
             this.editEventBox.Name = "editEventBox";
-            this.editEventBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editEventBox.Padding = new System.Windows.Forms.Padding(4);
             this.editEventBox.Size = new System.Drawing.Size(387, 1020);
             this.editEventBox.TabIndex = 5;
             this.editEventBox.TabStop = false;
@@ -1043,7 +1044,7 @@
             this.tableLayoutPanel12.Controls.Add(this.editingDateL, 0, 1);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.Padding = new System.Windows.Forms.Padding(13, 25, 13, 0);
             this.tableLayoutPanel12.RowCount = 4;
@@ -1064,7 +1065,7 @@
             this.tableLayoutPanel13.Controls.Add(this.button39, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(17, 927);
-            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1076,7 +1077,7 @@
             this.button37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button37.Location = new System.Drawing.Point(176, 4);
-            this.button37.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button37.Margin = new System.Windows.Forms.Padding(4);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(165, 58);
             this.button37.TabIndex = 14;
@@ -1089,7 +1090,7 @@
             this.button39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button39.Location = new System.Drawing.Point(4, 4);
-            this.button39.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button39.Margin = new System.Windows.Forms.Padding(4);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(164, 58);
             this.button39.TabIndex = 11;
@@ -1127,7 +1128,7 @@
             this.tableLayoutPanel14.Controls.Add(this.textBox8, 1, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(17, 300);
-            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 6;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
@@ -1144,7 +1145,7 @@
             this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox9.Location = new System.Drawing.Point(204, 200);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(137, 34);
             this.textBox9.TabIndex = 12;
@@ -1167,7 +1168,7 @@
             this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox5.Location = new System.Drawing.Point(204, 151);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(137, 34);
             this.textBox5.TabIndex = 10;
@@ -1177,7 +1178,7 @@
             this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox6.Location = new System.Drawing.Point(204, 102);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(137, 34);
             this.textBox6.TabIndex = 9;
@@ -1187,7 +1188,7 @@
             this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox7.Location = new System.Drawing.Point(204, 53);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(137, 34);
             this.textBox7.TabIndex = 8;
@@ -1249,7 +1250,7 @@
             this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox8.Location = new System.Drawing.Point(204, 4);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(137, 34);
             this.textBox8.TabIndex = 7;
@@ -1272,9 +1273,9 @@
             this.addEventBox.Controls.Add(this.tableLayoutPanel4);
             this.addEventBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addEventBox.Location = new System.Drawing.Point(0, 0);
-            this.addEventBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addEventBox.Margin = new System.Windows.Forms.Padding(4);
             this.addEventBox.Name = "addEventBox";
-            this.addEventBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addEventBox.Padding = new System.Windows.Forms.Padding(4);
             this.addEventBox.Size = new System.Drawing.Size(387, 1020);
             this.addEventBox.TabIndex = 4;
             this.addEventBox.TabStop = false;
@@ -1291,7 +1292,7 @@
             this.tableLayoutPanel4.Controls.Add(this.addingDateL, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.Padding = new System.Windows.Forms.Padding(13, 25, 13, 0);
             this.tableLayoutPanel4.RowCount = 4;
@@ -1312,7 +1313,7 @@
             this.tableLayoutPanel10.Controls.Add(this.button38, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(17, 927);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1324,7 +1325,7 @@
             this.button36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button36.Location = new System.Drawing.Point(176, 4);
-            this.button36.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button36.Margin = new System.Windows.Forms.Padding(4);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(165, 58);
             this.button36.TabIndex = 14;
@@ -1337,7 +1338,7 @@
             this.button38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button38.Location = new System.Drawing.Point(4, 4);
-            this.button38.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button38.Margin = new System.Windows.Forms.Padding(4);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(164, 58);
             this.button38.TabIndex = 11;
@@ -1373,7 +1374,7 @@
             this.tableLayoutPanel6.Controls.Add(this.textBox1, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(17, 300);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 5;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
@@ -1389,7 +1390,7 @@
             this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox4.Location = new System.Drawing.Point(164, 151);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(177, 34);
             this.textBox4.TabIndex = 10;
@@ -1399,7 +1400,7 @@
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox3.Location = new System.Drawing.Point(164, 102);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(177, 34);
             this.textBox3.TabIndex = 9;
@@ -1409,7 +1410,7 @@
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox2.Location = new System.Drawing.Point(164, 53);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(177, 34);
             this.textBox2.TabIndex = 8;
@@ -1471,7 +1472,7 @@
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox1.Location = new System.Drawing.Point(164, 4);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(177, 34);
             this.textBox1.TabIndex = 7;
@@ -1494,9 +1495,9 @@
             this.selectedMeetingBox.Controls.Add(this.tableLayoutPanel3);
             this.selectedMeetingBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.selectedMeetingBox.Location = new System.Drawing.Point(0, 0);
-            this.selectedMeetingBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.selectedMeetingBox.Margin = new System.Windows.Forms.Padding(4);
             this.selectedMeetingBox.Name = "selectedMeetingBox";
-            this.selectedMeetingBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.selectedMeetingBox.Padding = new System.Windows.Forms.Padding(4);
             this.selectedMeetingBox.Size = new System.Drawing.Size(387, 1020);
             this.selectedMeetingBox.TabIndex = 0;
             this.selectedMeetingBox.TabStop = false;
@@ -1511,7 +1512,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 19);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -1550,7 +1551,7 @@
             this.tableLayoutPanel5.Controls.Add(this.descriptionL, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 402);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 9;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 246F));
@@ -1570,7 +1571,7 @@
             this.deleteEventB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.deleteEventB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.deleteEventB.Location = new System.Drawing.Point(189, 546);
-            this.deleteEventB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteEventB.Margin = new System.Windows.Forms.Padding(4);
             this.deleteEventB.Name = "deleteEventB";
             this.deleteEventB.Size = new System.Drawing.Size(178, 41);
             this.deleteEventB.TabIndex = 24;
@@ -1582,7 +1583,7 @@
             this.EditEventB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EditEventB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.EditEventB.Location = new System.Drawing.Point(4, 546);
-            this.EditEventB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditEventB.Margin = new System.Windows.Forms.Padding(4);
             this.EditEventB.Name = "EditEventB";
             this.EditEventB.Size = new System.Drawing.Size(177, 41);
             this.EditEventB.TabIndex = 23;
@@ -1693,7 +1694,7 @@
             this.tableLayoutPanel11.Controls.Add(this.logoutButton, 1, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(17, 16);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1721,7 +1722,7 @@
             this.logoutButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutButton.Location = new System.Drawing.Point(1814, 4);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(72, 107);
             this.logoutButton.TabIndex = 2;
@@ -1735,7 +1736,7 @@
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1924, 1175);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Manager";
             this.Text = "Manager";
             this.tableLayoutPanel1.ResumeLayout(false);

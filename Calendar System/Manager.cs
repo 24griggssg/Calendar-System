@@ -25,9 +25,9 @@ namespace Calendar_System
         private void button_Click(object sender, EventArgs e) {
             Button button = (Button)sender;
 
-            int day = Int32.Parse(button.Name.Substring(6));
+            int day = Int32.Parse(button.Text);
 
-            MessageBox.Show("Selected Day " + day);
+            selectedDateL.Text = "3/" + day + "/26";
         }
     }
 }
