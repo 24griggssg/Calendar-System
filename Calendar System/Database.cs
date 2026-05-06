@@ -20,6 +20,7 @@ namespace Calendar_System
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();
+                    conn.Close();
                     return true;
                 }
             }
@@ -28,6 +29,8 @@ namespace Calendar_System
                 Console.WriteLine(ex.Message);
                 return false;
             }
+
+            
         }
         //login function that checks the database for the username and password and returns a tuple with the success of the login, if the user is a manager, and the employee ID
         public (bool success, bool isManager, int userID) Login(string username, string password)
@@ -49,6 +52,7 @@ namespace Calendar_System
 
                         return (true, isManager, id);
                     }
+                    conn.Close();
                 }
             }
             catch (Exception ex)
@@ -94,6 +98,7 @@ namespace Calendar_System
 
                         events.Add(e);
                     }
+                    conn.Close();
                 }
             }
             catch (Exception ex)
@@ -128,6 +133,7 @@ namespace Calendar_System
 
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
 
+                    conn.Close();
                     return count > 0;
                 }
             }
@@ -176,6 +182,7 @@ namespace Calendar_System
 
                         events.Add(e);
                     }
+                    conn.Close();
                 }
             }
             catch (Exception ex)
@@ -221,6 +228,8 @@ namespace Calendar_System
                     cmd2.Parameters.AddWithValue("@userID", userID);
 
                     cmd2.ExecuteNonQuery();
+
+                    conn.Close();
                 }
             }
             catch (Exception ex)

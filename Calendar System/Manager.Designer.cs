@@ -75,6 +75,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button35 = new System.Windows.Forms.Button();
+            this.meetingsBox = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.addEventB = new System.Windows.Forms.Button();
+            this.meeting1Button = new System.Windows.Forms.Button();
+            this.selectedDateL = new System.Windows.Forms.Label();
             this.editEventBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
@@ -122,16 +129,21 @@
             this.descriptionD = new System.Windows.Forms.Label();
             this.descriptionL = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.meetingsBox = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.addEventB = new System.Windows.Forms.Button();
-            this.meeting1Button = new System.Windows.Forms.Button();
-            this.selectedDateL = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.logoutButton = new System.Windows.Forms.Button();
+            this.newEventPanel = new System.Windows.Forms.Panel();
+            this.eventNameBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.startTimeBox = new System.Windows.Forms.TextBox();
+            this.endTimeBox = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.descriptionBox = new System.Windows.Forms.TextBox();
+            this.finishEventButton = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.cancelNewEventButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -139,6 +151,9 @@
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.meetingsBox.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
             this.editEventBox.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
@@ -150,10 +165,8 @@
             this.selectedMeetingBox.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.meetingsBox.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
+            this.newEventPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -166,11 +179,11 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1797, 1019);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1155, 765);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // splitContainer1
@@ -189,8 +202,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.editEventBox);
             this.splitContainer1.Panel2.Controls.Add(this.addEventBox);
             this.splitContainer1.Panel2.Controls.Add(this.selectedMeetingBox);
-            this.splitContainer1.Size = new System.Drawing.Size(1771, 893);
-            this.splitContainer1.SplitterDistance = 1404;
+            this.splitContainer1.Size = new System.Drawing.Size(1129, 639);
+            this.splitContainer1.SplitterDistance = 894;
             this.splitContainer1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -206,7 +219,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1404, 893);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(894, 639);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label3
@@ -218,7 +231,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1398, 80);
+            this.label3.Size = new System.Drawing.Size(888, 80);
             this.label3.TabIndex = 0;
             this.label3.Text = "March 2026";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -286,7 +299,7 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1398, 807);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(888, 553);
             this.tableLayoutPanel7.TabIndex = 1;
             this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
             // 
@@ -295,430 +308,462 @@
             this.button34.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button34.Location = new System.Drawing.Point(998, 659);
+            this.button34.Location = new System.Drawing.Point(633, 455);
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(193, 145);
+            this.button34.Size = new System.Drawing.Size(120, 95);
             this.button34.TabIndex = 41;
             this.button34.Text = "3";
             this.button34.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button34.UseVisualStyleBackColor = false;
+            this.button34.Click += new System.EventHandler(this.button_Click);
             // 
             // button33
             // 
             this.button33.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button33.Location = new System.Drawing.Point(799, 659);
+            this.button33.Location = new System.Drawing.Point(507, 455);
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(193, 145);
+            this.button33.Size = new System.Drawing.Size(120, 95);
             this.button33.TabIndex = 40;
             this.button33.Text = "2";
             this.button33.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button33.UseVisualStyleBackColor = false;
+            this.button33.Click += new System.EventHandler(this.button_Click);
             // 
             // button32
             // 
             this.button32.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button32.Location = new System.Drawing.Point(600, 659);
+            this.button32.Location = new System.Drawing.Point(381, 455);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(193, 145);
+            this.button32.Size = new System.Drawing.Size(120, 95);
             this.button32.TabIndex = 39;
             this.button32.Text = "1";
             this.button32.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button32.UseVisualStyleBackColor = false;
+            this.button32.Click += new System.EventHandler(this.button_Click);
             // 
             // button31
             // 
             this.button31.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button31.Location = new System.Drawing.Point(401, 659);
+            this.button31.Location = new System.Drawing.Point(255, 455);
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(193, 145);
+            this.button31.Size = new System.Drawing.Size(120, 95);
             this.button31.TabIndex = 38;
             this.button31.Text = "31";
             this.button31.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button31.UseVisualStyleBackColor = false;
+            this.button31.Click += new System.EventHandler(this.button_Click);
             // 
             // button30
             // 
             this.button30.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button30.Location = new System.Drawing.Point(202, 659);
+            this.button30.Location = new System.Drawing.Point(129, 455);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(193, 145);
+            this.button30.Size = new System.Drawing.Size(120, 95);
             this.button30.TabIndex = 37;
             this.button30.Text = "30";
             this.button30.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button_Click);
             // 
             // button29
             // 
             this.button29.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button29.Location = new System.Drawing.Point(3, 659);
+            this.button29.Location = new System.Drawing.Point(3, 455);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(193, 145);
+            this.button29.Size = new System.Drawing.Size(120, 95);
             this.button29.TabIndex = 36;
             this.button29.Text = "29";
             this.button29.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button29.UseVisualStyleBackColor = false;
+            this.button29.Click += new System.EventHandler(this.button_Click);
             // 
             // button28
             // 
             this.button28.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button28.Location = new System.Drawing.Point(1197, 510);
+            this.button28.Location = new System.Drawing.Point(759, 357);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(198, 143);
+            this.button28.Size = new System.Drawing.Size(126, 92);
             this.button28.TabIndex = 35;
             this.button28.Text = "28";
             this.button28.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.button_Click);
             // 
             // button27
             // 
             this.button27.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button27.Location = new System.Drawing.Point(998, 510);
+            this.button27.Location = new System.Drawing.Point(633, 357);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(193, 143);
+            this.button27.Size = new System.Drawing.Size(120, 92);
             this.button27.TabIndex = 34;
             this.button27.Text = "27";
             this.button27.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button_Click);
             // 
             // button26
             // 
             this.button26.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button26.Location = new System.Drawing.Point(799, 510);
+            this.button26.Location = new System.Drawing.Point(507, 357);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(193, 143);
+            this.button26.Size = new System.Drawing.Size(120, 92);
             this.button26.TabIndex = 33;
             this.button26.Text = "26";
             this.button26.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button_Click);
             // 
             // button25
             // 
             this.button25.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button25.Location = new System.Drawing.Point(600, 510);
+            this.button25.Location = new System.Drawing.Point(381, 357);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(193, 143);
+            this.button25.Size = new System.Drawing.Size(120, 92);
             this.button25.TabIndex = 32;
             this.button25.Text = "25";
             this.button25.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button_Click);
             // 
             // button24
             // 
             this.button24.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button24.Location = new System.Drawing.Point(401, 510);
+            this.button24.Location = new System.Drawing.Point(255, 357);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(193, 143);
+            this.button24.Size = new System.Drawing.Size(120, 92);
             this.button24.TabIndex = 31;
             this.button24.Text = "24";
             this.button24.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button_Click);
             // 
             // button23
             // 
             this.button23.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button23.Location = new System.Drawing.Point(202, 510);
+            this.button23.Location = new System.Drawing.Point(129, 357);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(193, 143);
+            this.button23.Size = new System.Drawing.Size(120, 92);
             this.button23.TabIndex = 30;
             this.button23.Text = "23";
             this.button23.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button_Click);
             // 
             // button22
             // 
             this.button22.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button22.Location = new System.Drawing.Point(3, 510);
+            this.button22.Location = new System.Drawing.Point(3, 357);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(193, 143);
+            this.button22.Size = new System.Drawing.Size(120, 92);
             this.button22.TabIndex = 29;
             this.button22.Text = "22";
             this.button22.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button_Click);
             // 
             // button21
             // 
             this.button21.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button21.Location = new System.Drawing.Point(1197, 361);
+            this.button21.Location = new System.Drawing.Point(759, 259);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(198, 143);
+            this.button21.Size = new System.Drawing.Size(126, 92);
             this.button21.TabIndex = 28;
             this.button21.Text = "21";
             this.button21.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button_Click);
             // 
             // button20
             // 
             this.button20.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button20.Location = new System.Drawing.Point(998, 361);
+            this.button20.Location = new System.Drawing.Point(633, 259);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(193, 143);
+            this.button20.Size = new System.Drawing.Size(120, 92);
             this.button20.TabIndex = 27;
             this.button20.Text = "20";
             this.button20.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button_Click);
             // 
             // button19
             // 
             this.button19.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button19.Location = new System.Drawing.Point(799, 361);
+            this.button19.Location = new System.Drawing.Point(507, 259);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(193, 143);
+            this.button19.Size = new System.Drawing.Size(120, 92);
             this.button19.TabIndex = 26;
             this.button19.Text = "19";
             this.button19.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button_Click);
             // 
             // button18
             // 
             this.button18.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button18.Location = new System.Drawing.Point(600, 361);
+            this.button18.Location = new System.Drawing.Point(381, 259);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(193, 143);
+            this.button18.Size = new System.Drawing.Size(120, 92);
             this.button18.TabIndex = 25;
             this.button18.Text = "18";
             this.button18.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button_Click);
             // 
             // button17
             // 
             this.button17.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button17.Location = new System.Drawing.Point(401, 361);
+            this.button17.Location = new System.Drawing.Point(255, 259);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(193, 143);
+            this.button17.Size = new System.Drawing.Size(120, 92);
             this.button17.TabIndex = 24;
             this.button17.Text = "17";
             this.button17.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button_Click);
             // 
             // button16
             // 
             this.button16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button16.Location = new System.Drawing.Point(202, 361);
+            this.button16.Location = new System.Drawing.Point(129, 259);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(193, 143);
+            this.button16.Size = new System.Drawing.Size(120, 92);
             this.button16.TabIndex = 23;
             this.button16.Text = "16";
             this.button16.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button_Click);
             // 
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button15.Location = new System.Drawing.Point(3, 361);
+            this.button15.Location = new System.Drawing.Point(3, 259);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(193, 143);
+            this.button15.Size = new System.Drawing.Size(120, 92);
             this.button15.TabIndex = 22;
             this.button15.Text = "15";
             this.button15.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button_Click);
             // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button14.Location = new System.Drawing.Point(1197, 212);
+            this.button14.Location = new System.Drawing.Point(759, 161);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(198, 143);
+            this.button14.Size = new System.Drawing.Size(126, 92);
             this.button14.TabIndex = 21;
             this.button14.Text = "14";
             this.button14.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button_Click);
             // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button13.Location = new System.Drawing.Point(998, 212);
+            this.button13.Location = new System.Drawing.Point(633, 161);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(193, 143);
+            this.button13.Size = new System.Drawing.Size(120, 92);
             this.button13.TabIndex = 20;
             this.button13.Text = "13";
             this.button13.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button_Click);
             // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button12.Location = new System.Drawing.Point(799, 212);
+            this.button12.Location = new System.Drawing.Point(507, 161);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(193, 143);
+            this.button12.Size = new System.Drawing.Size(120, 92);
             this.button12.TabIndex = 19;
             this.button12.Text = "12";
             this.button12.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button_Click);
             // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button11.Location = new System.Drawing.Point(600, 212);
+            this.button11.Location = new System.Drawing.Point(381, 161);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(193, 143);
+            this.button11.Size = new System.Drawing.Size(120, 92);
             this.button11.TabIndex = 18;
             this.button11.Text = "11";
             this.button11.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button_Click);
             // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button10.Location = new System.Drawing.Point(401, 212);
+            this.button10.Location = new System.Drawing.Point(255, 161);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(193, 143);
+            this.button10.Size = new System.Drawing.Size(120, 92);
             this.button10.TabIndex = 17;
             this.button10.Text = "10";
             this.button10.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button_Click);
             // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button9.Location = new System.Drawing.Point(202, 212);
+            this.button9.Location = new System.Drawing.Point(129, 161);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(193, 143);
+            this.button9.Size = new System.Drawing.Size(120, 92);
             this.button9.TabIndex = 16;
             this.button9.Text = "9";
             this.button9.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button_Click);
             // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button8.Location = new System.Drawing.Point(3, 212);
+            this.button8.Location = new System.Drawing.Point(3, 161);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(193, 143);
+            this.button8.Size = new System.Drawing.Size(120, 92);
             this.button8.TabIndex = 15;
             this.button8.Text = "8";
             this.button8.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button_Click);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button7.Location = new System.Drawing.Point(1197, 63);
+            this.button7.Location = new System.Drawing.Point(759, 63);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(198, 143);
+            this.button7.Size = new System.Drawing.Size(126, 92);
             this.button7.TabIndex = 14;
             this.button7.Text = "7";
             this.button7.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button_Click);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button6.Location = new System.Drawing.Point(998, 63);
+            this.button6.Location = new System.Drawing.Point(633, 63);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(193, 143);
+            this.button6.Size = new System.Drawing.Size(120, 92);
             this.button6.TabIndex = 13;
             this.button6.Text = "6";
             this.button6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button_Click);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button5.Location = new System.Drawing.Point(799, 63);
+            this.button5.Location = new System.Drawing.Point(507, 63);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(193, 143);
+            this.button5.Size = new System.Drawing.Size(120, 92);
             this.button5.TabIndex = 12;
             this.button5.Text = "5";
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button4.Location = new System.Drawing.Point(600, 63);
+            this.button4.Location = new System.Drawing.Point(381, 63);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(193, 143);
+            this.button4.Size = new System.Drawing.Size(120, 92);
             this.button4.TabIndex = 11;
             this.button4.Text = "4";
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button3.Location = new System.Drawing.Point(401, 63);
+            this.button3.Location = new System.Drawing.Point(255, 63);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(193, 143);
+            this.button3.Size = new System.Drawing.Size(120, 92);
             this.button3.TabIndex = 10;
             this.button3.Text = "3";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button2.Location = new System.Drawing.Point(202, 63);
+            this.button2.Location = new System.Drawing.Point(129, 63);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 143);
+            this.button2.Size = new System.Drawing.Size(120, 92);
             this.button2.TabIndex = 9;
             this.button2.Text = "2";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button_Click);
             // 
             // button1
             // 
@@ -727,11 +772,12 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Location = new System.Drawing.Point(3, 63);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 143);
+            this.button1.Size = new System.Drawing.Size(120, 92);
             this.button1.TabIndex = 8;
             this.button1.Text = "1";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button_Click);
             // 
             // label11
             // 
@@ -739,9 +785,9 @@
             this.label11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label11.Location = new System.Drawing.Point(1197, 0);
+            this.label11.Location = new System.Drawing.Point(759, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(198, 60);
+            this.label11.Size = new System.Drawing.Size(126, 60);
             this.label11.TabIndex = 6;
             this.label11.Text = "SAT";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -752,9 +798,9 @@
             this.label10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label10.Location = new System.Drawing.Point(998, 0);
+            this.label10.Location = new System.Drawing.Point(633, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(193, 60);
+            this.label10.Size = new System.Drawing.Size(120, 60);
             this.label10.TabIndex = 5;
             this.label10.Text = "FRI";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -765,9 +811,9 @@
             this.label9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label9.Location = new System.Drawing.Point(799, 0);
+            this.label9.Location = new System.Drawing.Point(507, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(193, 60);
+            this.label9.Size = new System.Drawing.Size(120, 60);
             this.label9.TabIndex = 4;
             this.label9.Text = "THU";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -778,9 +824,9 @@
             this.label8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label8.Location = new System.Drawing.Point(600, 0);
+            this.label8.Location = new System.Drawing.Point(381, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(193, 60);
+            this.label8.Size = new System.Drawing.Size(120, 60);
             this.label8.TabIndex = 3;
             this.label8.Text = "WED";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -791,9 +837,9 @@
             this.label7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label7.Location = new System.Drawing.Point(401, 0);
+            this.label7.Location = new System.Drawing.Point(255, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(193, 60);
+            this.label7.Size = new System.Drawing.Size(120, 60);
             this.label7.TabIndex = 2;
             this.label7.Text = "TUE";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -804,9 +850,9 @@
             this.label6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label6.Location = new System.Drawing.Point(202, 0);
+            this.label6.Location = new System.Drawing.Point(129, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(193, 60);
+            this.label6.Size = new System.Drawing.Size(120, 60);
             this.label6.TabIndex = 1;
             this.label6.Text = "MON";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -819,7 +865,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(193, 60);
+            this.label5.Size = new System.Drawing.Size(120, 60);
             this.label5.TabIndex = 0;
             this.label5.Text = "SUN";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -829,13 +875,108 @@
             this.button35.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button35.Location = new System.Drawing.Point(1197, 659);
+            this.button35.Location = new System.Drawing.Point(759, 455);
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(198, 145);
+            this.button35.Size = new System.Drawing.Size(126, 95);
             this.button35.TabIndex = 7;
             this.button35.Text = "4";
             this.button35.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button35.UseVisualStyleBackColor = false;
+            this.button35.Click += new System.EventHandler(this.button_Click);
+            // 
+            // meetingsBox
+            // 
+            this.meetingsBox.Controls.Add(this.tableLayoutPanel8);
+            this.meetingsBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.meetingsBox.Location = new System.Drawing.Point(0, 0);
+            this.meetingsBox.MinimumSize = new System.Drawing.Size(30, 8);
+            this.meetingsBox.Name = "meetingsBox";
+            this.meetingsBox.Size = new System.Drawing.Size(231, 639);
+            this.meetingsBox.TabIndex = 3;
+            this.meetingsBox.TabStop = false;
+            this.meetingsBox.Text = "meetingsBox";
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.Controls.Add(this.label13, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel9, 0, 2);
+            this.tableLayoutPanel8.Controls.Add(this.selectedDateL, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 16);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 3;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(225, 620);
+            this.tableLayoutPanel8.TabIndex = 1;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.label13.Location = new System.Drawing.Point(3, 155);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(219, 93);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Meetings";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 1;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.Controls.Add(this.addEventB, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.meeting1Button, 0, 0);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 251);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 2;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(219, 366);
+            this.tableLayoutPanel9.TabIndex = 2;
+            // 
+            // addEventB
+            // 
+            this.addEventB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addEventB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.addEventB.Location = new System.Drawing.Point(3, 329);
+            this.addEventB.Name = "addEventB";
+            this.addEventB.Size = new System.Drawing.Size(213, 34);
+            this.addEventB.TabIndex = 12;
+            this.addEventB.Text = "Add Event";
+            this.addEventB.UseVisualStyleBackColor = true;
+            this.addEventB.Click += new System.EventHandler(this.addEventB_Click);
+            // 
+            // meeting1Button
+            // 
+            this.meeting1Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.meeting1Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meeting1Button.Location = new System.Drawing.Point(3, 3);
+            this.meeting1Button.Name = "meeting1Button";
+            this.meeting1Button.Size = new System.Drawing.Size(213, 49);
+            this.meeting1Button.TabIndex = 5;
+            this.meeting1Button.Text = "Team Meeting";
+            this.meeting1Button.UseVisualStyleBackColor = true;
+            // 
+            // selectedDateL
+            // 
+            this.selectedDateL.AutoSize = true;
+            this.selectedDateL.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.selectedDateL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.selectedDateL.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
+            this.selectedDateL.Location = new System.Drawing.Point(3, 0);
+            this.selectedDateL.Name = "selectedDateL";
+            this.selectedDateL.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
+            this.selectedDateL.Size = new System.Drawing.Size(219, 155);
+            this.selectedDateL.TabIndex = 0;
+            this.selectedDateL.Text = "3/1/2026";
+            this.selectedDateL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // editEventBox
             // 
@@ -843,7 +984,7 @@
             this.editEventBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editEventBox.Location = new System.Drawing.Point(0, 0);
             this.editEventBox.Name = "editEventBox";
-            this.editEventBox.Size = new System.Drawing.Size(363, 893);
+            this.editEventBox.Size = new System.Drawing.Size(231, 639);
             this.editEventBox.TabIndex = 5;
             this.editEventBox.TabStop = false;
             this.editEventBox.Text = "editEventBox";
@@ -866,7 +1007,7 @@
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(357, 874);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(225, 620);
             this.tableLayoutPanel12.TabIndex = 1;
             // 
             // tableLayoutPanel13
@@ -878,23 +1019,24 @@
             this.tableLayoutPanel13.Controls.Add(this.button37, 1, 0);
             this.tableLayoutPanel13.Controls.Add(this.button39, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(13, 817);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(13, 563);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(331, 54);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(199, 54);
             this.tableLayoutPanel13.TabIndex = 5;
             // 
             // button37
             // 
             this.button37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button37.Location = new System.Drawing.Point(168, 3);
+            this.button37.Location = new System.Drawing.Point(102, 3);
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(160, 48);
+            this.button37.Size = new System.Drawing.Size(94, 48);
             this.button37.TabIndex = 14;
             this.button37.Text = "Cancel";
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button_Click);
             // 
             // button39
             // 
@@ -902,10 +1044,11 @@
             this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button39.Location = new System.Drawing.Point(3, 3);
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(159, 48);
+            this.button39.Size = new System.Drawing.Size(93, 48);
             this.button39.TabIndex = 11;
             this.button39.Text = "Confirm";
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button_Click);
             // 
             // label14
             // 
@@ -914,7 +1057,7 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
             this.label14.Location = new System.Drawing.Point(13, 20);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(331, 120);
+            this.label14.Size = new System.Drawing.Size(199, 120);
             this.label14.TabIndex = 0;
             this.label14.Text = "Editing Event for date:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -944,7 +1087,7 @@
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(331, 503);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(199, 314);
             this.tableLayoutPanel14.TabIndex = 1;
             // 
             // textBox9
@@ -953,7 +1096,7 @@
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox9.Location = new System.Drawing.Point(153, 163);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(175, 29);
+            this.textBox9.Size = new System.Drawing.Size(43, 29);
             this.textBox9.TabIndex = 12;
             // 
             // label4
@@ -974,7 +1117,7 @@
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox5.Location = new System.Drawing.Point(153, 123);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(175, 29);
+            this.textBox5.Size = new System.Drawing.Size(43, 29);
             this.textBox5.TabIndex = 10;
             // 
             // textBox6
@@ -983,7 +1126,7 @@
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox6.Location = new System.Drawing.Point(153, 83);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(175, 29);
+            this.textBox6.Size = new System.Drawing.Size(43, 29);
             this.textBox6.TabIndex = 9;
             // 
             // textBox7
@@ -992,7 +1135,7 @@
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox7.Location = new System.Drawing.Point(153, 43);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(175, 29);
+            this.textBox7.Size = new System.Drawing.Size(43, 29);
             this.textBox7.TabIndex = 8;
             // 
             // label16
@@ -1049,7 +1192,7 @@
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox8.Location = new System.Drawing.Point(153, 3);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(175, 29);
+            this.textBox8.Size = new System.Drawing.Size(43, 29);
             this.textBox8.TabIndex = 7;
             // 
             // editingDateL
@@ -1059,7 +1202,7 @@
             this.editingDateL.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
             this.editingDateL.Location = new System.Drawing.Point(13, 140);
             this.editingDateL.Name = "editingDateL";
-            this.editingDateL.Size = new System.Drawing.Size(331, 100);
+            this.editingDateL.Size = new System.Drawing.Size(199, 100);
             this.editingDateL.TabIndex = 2;
             this.editingDateL.Text = "3/1/2026";
             this.editingDateL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1070,7 +1213,7 @@
             this.addEventBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addEventBox.Location = new System.Drawing.Point(0, 0);
             this.addEventBox.Name = "addEventBox";
-            this.addEventBox.Size = new System.Drawing.Size(363, 893);
+            this.addEventBox.Size = new System.Drawing.Size(231, 639);
             this.addEventBox.TabIndex = 4;
             this.addEventBox.TabStop = false;
             this.addEventBox.Text = "addEventBox";
@@ -1093,7 +1236,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(357, 874);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(225, 620);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // tableLayoutPanel10
@@ -1105,23 +1248,24 @@
             this.tableLayoutPanel10.Controls.Add(this.button36, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.button38, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(13, 817);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(13, 563);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(331, 54);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(199, 54);
             this.tableLayoutPanel10.TabIndex = 5;
             // 
             // button36
             // 
             this.button36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button36.Location = new System.Drawing.Point(168, 3);
+            this.button36.Location = new System.Drawing.Point(102, 3);
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(160, 48);
+            this.button36.Size = new System.Drawing.Size(94, 48);
             this.button36.TabIndex = 14;
             this.button36.Text = "Cancel";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button_Click);
             // 
             // button38
             // 
@@ -1129,10 +1273,11 @@
             this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.button38.Location = new System.Drawing.Point(3, 3);
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(159, 48);
+            this.button38.Size = new System.Drawing.Size(93, 48);
             this.button38.TabIndex = 11;
             this.button38.Text = "Add Event";
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button_Click);
             // 
             // addingEventToDateL
             // 
@@ -1141,7 +1286,7 @@
             this.addingEventToDateL.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
             this.addingEventToDateL.Location = new System.Drawing.Point(13, 20);
             this.addingEventToDateL.Name = "addingEventToDateL";
-            this.addingEventToDateL.Size = new System.Drawing.Size(331, 120);
+            this.addingEventToDateL.Size = new System.Drawing.Size(199, 120);
             this.addingEventToDateL.TabIndex = 0;
             this.addingEventToDateL.Text = "Adding Event for date:";
             this.addingEventToDateL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1168,7 +1313,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(331, 503);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(199, 314);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // textBox4
@@ -1177,7 +1322,7 @@
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox4.Location = new System.Drawing.Point(123, 123);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(205, 29);
+            this.textBox4.Size = new System.Drawing.Size(73, 29);
             this.textBox4.TabIndex = 10;
             // 
             // textBox3
@@ -1186,7 +1331,7 @@
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox3.Location = new System.Drawing.Point(123, 83);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 29);
+            this.textBox3.Size = new System.Drawing.Size(73, 29);
             this.textBox3.TabIndex = 9;
             // 
             // textBox2
@@ -1195,7 +1340,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox2.Location = new System.Drawing.Point(123, 43);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 29);
+            this.textBox2.Size = new System.Drawing.Size(73, 29);
             this.textBox2.TabIndex = 8;
             // 
             // label19
@@ -1252,7 +1397,7 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBox1.Location = new System.Drawing.Point(123, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 29);
+            this.textBox1.Size = new System.Drawing.Size(73, 29);
             this.textBox1.TabIndex = 7;
             // 
             // addingDateL
@@ -1262,7 +1407,7 @@
             this.addingDateL.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
             this.addingDateL.Location = new System.Drawing.Point(13, 140);
             this.addingDateL.Name = "addingDateL";
-            this.addingDateL.Size = new System.Drawing.Size(331, 100);
+            this.addingDateL.Size = new System.Drawing.Size(199, 100);
             this.addingDateL.TabIndex = 2;
             this.addingDateL.Text = "3/1/2026";
             this.addingDateL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1273,7 +1418,7 @@
             this.selectedMeetingBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.selectedMeetingBox.Location = new System.Drawing.Point(0, 0);
             this.selectedMeetingBox.Name = "selectedMeetingBox";
-            this.selectedMeetingBox.Size = new System.Drawing.Size(363, 893);
+            this.selectedMeetingBox.Size = new System.Drawing.Size(231, 639);
             this.selectedMeetingBox.TabIndex = 0;
             this.selectedMeetingBox.TabStop = false;
             this.selectedMeetingBox.Text = "selectedMeetingBox";
@@ -1292,7 +1437,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(357, 874);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(225, 620);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // selectedDateL2
@@ -1301,9 +1446,9 @@
             this.selectedDateL2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.selectedDateL2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.selectedDateL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.selectedDateL2.Location = new System.Drawing.Point(3, 218);
+            this.selectedDateL2.Location = new System.Drawing.Point(3, 155);
             this.selectedDateL2.Name = "selectedDateL2";
-            this.selectedDateL2.Size = new System.Drawing.Size(351, 131);
+            this.selectedDateL2.Size = new System.Drawing.Size(219, 93);
             this.selectedDateL2.TabIndex = 1;
             this.selectedDateL2.Text = "2/27/2026";
             this.selectedDateL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1323,7 +1468,7 @@
             this.tableLayoutPanel5.Controls.Add(this.descriptionD, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.descriptionL, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 352);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 251);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 9;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
@@ -1335,16 +1480,16 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(351, 519);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(219, 366);
             this.tableLayoutPanel5.TabIndex = 4;
             // 
             // deleteEventB
             // 
             this.deleteEventB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.deleteEventB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.deleteEventB.Location = new System.Drawing.Point(178, 480);
+            this.deleteEventB.Location = new System.Drawing.Point(112, 328);
             this.deleteEventB.Name = "deleteEventB";
-            this.deleteEventB.Size = new System.Drawing.Size(170, 36);
+            this.deleteEventB.Size = new System.Drawing.Size(104, 35);
             this.deleteEventB.TabIndex = 24;
             this.deleteEventB.Text = "Delete Event";
             this.deleteEventB.UseVisualStyleBackColor = true;
@@ -1353,9 +1498,9 @@
             // 
             this.EditEventB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EditEventB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.EditEventB.Location = new System.Drawing.Point(3, 480);
+            this.EditEventB.Location = new System.Drawing.Point(3, 328);
             this.EditEventB.Name = "EditEventB";
-            this.EditEventB.Size = new System.Drawing.Size(169, 36);
+            this.EditEventB.Size = new System.Drawing.Size(103, 35);
             this.EditEventB.TabIndex = 23;
             this.EditEventB.Text = "Edit Event";
             this.EditEventB.UseVisualStyleBackColor = true;
@@ -1365,9 +1510,9 @@
             this.endTimeD.AutoSize = true;
             this.endTimeD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.endTimeD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.endTimeD.Location = new System.Drawing.Point(178, 230);
+            this.endTimeD.Location = new System.Drawing.Point(112, 230);
             this.endTimeD.Name = "endTimeD";
-            this.endTimeD.Size = new System.Drawing.Size(170, 30);
+            this.endTimeD.Size = new System.Drawing.Size(104, 30);
             this.endTimeD.TabIndex = 5;
             this.endTimeD.Text = "1:00 pm";
             this.endTimeD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1380,7 +1525,7 @@
             this.endTimeL.Location = new System.Drawing.Point(3, 230);
             this.endTimeL.Name = "endTimeL";
             this.endTimeL.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.endTimeL.Size = new System.Drawing.Size(169, 30);
+            this.endTimeL.Size = new System.Drawing.Size(103, 30);
             this.endTimeL.TabIndex = 4;
             this.endTimeL.Text = "End Time:";
             this.endTimeL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1390,9 +1535,9 @@
             this.startTimeD.AutoSize = true;
             this.startTimeD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.startTimeD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.startTimeD.Location = new System.Drawing.Point(178, 200);
+            this.startTimeD.Location = new System.Drawing.Point(112, 200);
             this.startTimeD.Name = "startTimeD";
-            this.startTimeD.Size = new System.Drawing.Size(170, 30);
+            this.startTimeD.Size = new System.Drawing.Size(104, 30);
             this.startTimeD.TabIndex = 3;
             this.startTimeD.Text = "11:00 am";
             this.startTimeD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1405,7 +1550,7 @@
             this.startTimeL.Location = new System.Drawing.Point(3, 200);
             this.startTimeL.Name = "startTimeL";
             this.startTimeL.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.startTimeL.Size = new System.Drawing.Size(169, 30);
+            this.startTimeL.Size = new System.Drawing.Size(103, 30);
             this.startTimeL.TabIndex = 2;
             this.startTimeL.Text = "Start Time: ";
             this.startTimeL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1415,9 +1560,9 @@
             this.descriptionD.AutoSize = true;
             this.descriptionD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.descriptionD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.descriptionD.Location = new System.Drawing.Point(178, 0);
+            this.descriptionD.Location = new System.Drawing.Point(112, 0);
             this.descriptionD.Name = "descriptionD";
-            this.descriptionD.Size = new System.Drawing.Size(170, 200);
+            this.descriptionD.Size = new System.Drawing.Size(104, 200);
             this.descriptionD.TabIndex = 1;
             this.descriptionD.Text = "Marketing Tactics";
             // 
@@ -1429,7 +1574,7 @@
             this.descriptionL.Location = new System.Drawing.Point(3, 0);
             this.descriptionL.Name = "descriptionL";
             this.descriptionL.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.descriptionL.Size = new System.Drawing.Size(169, 200);
+            this.descriptionL.Size = new System.Drawing.Size(103, 200);
             this.descriptionL.TabIndex = 0;
             this.descriptionL.Text = "Description:";
             // 
@@ -1442,102 +1587,10 @@
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.label2.Size = new System.Drawing.Size(351, 218);
+            this.label2.Size = new System.Drawing.Size(219, 155);
             this.label2.TabIndex = 0;
             this.label2.Text = "Team Meeting";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // meetingsBox
-            // 
-            this.meetingsBox.Controls.Add(this.tableLayoutPanel8);
-            this.meetingsBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.meetingsBox.Location = new System.Drawing.Point(0, 0);
-            this.meetingsBox.Name = "meetingsBox";
-            this.meetingsBox.Size = new System.Drawing.Size(363, 893);
-            this.meetingsBox.TabIndex = 3;
-            this.meetingsBox.TabStop = false;
-            this.meetingsBox.Text = "meetingsBox";
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Controls.Add(this.label13, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel9, 0, 2);
-            this.tableLayoutPanel8.Controls.Add(this.selectedDateL, 0, 0);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 16);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 3;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 874);
-            this.tableLayoutPanel8.TabIndex = 1;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label13.Location = new System.Drawing.Point(3, 218);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(351, 131);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Meetings";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.ColumnCount = 1;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Controls.Add(this.addEventB, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.meeting1Button, 0, 0);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 352);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 2;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(351, 519);
-            this.tableLayoutPanel9.TabIndex = 2;
-            // 
-            // addEventB
-            // 
-            this.addEventB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addEventB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.addEventB.Location = new System.Drawing.Point(3, 482);
-            this.addEventB.Name = "addEventB";
-            this.addEventB.Size = new System.Drawing.Size(345, 34);
-            this.addEventB.TabIndex = 12;
-            this.addEventB.Text = "Add Event";
-            this.addEventB.UseVisualStyleBackColor = true;
-            // 
-            // meeting1Button
-            // 
-            this.meeting1Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.meeting1Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.meeting1Button.Location = new System.Drawing.Point(3, 3);
-            this.meeting1Button.Name = "meeting1Button";
-            this.meeting1Button.Size = new System.Drawing.Size(345, 49);
-            this.meeting1Button.TabIndex = 5;
-            this.meeting1Button.Text = "Team Meeting";
-            this.meeting1Button.UseVisualStyleBackColor = true;
-            // 
-            // selectedDateL
-            // 
-            this.selectedDateL.AutoSize = true;
-            this.selectedDateL.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.selectedDateL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.selectedDateL.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
-            this.selectedDateL.Location = new System.Drawing.Point(3, 0);
-            this.selectedDateL.Name = "selectedDateL";
-            this.selectedDateL.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.selectedDateL.Size = new System.Drawing.Size(351, 218);
-            this.selectedDateL.TabIndex = 0;
-            this.selectedDateL.Text = "3/1/2026";
-            this.selectedDateL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel11
             // 
@@ -1552,7 +1605,7 @@
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(1771, 94);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(1129, 94);
             this.tableLayoutPanel11.TabIndex = 2;
             // 
             // label1
@@ -1564,8 +1617,8 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(10);
-            this.label1.Size = new System.Drawing.Size(1705, 94);
+            this.label1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.label1.Size = new System.Drawing.Size(1063, 94);
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome, John Smith!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1574,19 +1627,145 @@
             // 
             this.logoutButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(1714, 3);
+            this.logoutButton.Location = new System.Drawing.Point(1072, 3);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(54, 88);
             this.logoutButton.TabIndex = 2;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
             // 
+            // newEventPanel
+            // 
+            this.newEventPanel.Controls.Add(this.cancelNewEventButton);
+            this.newEventPanel.Controls.Add(this.label26);
+            this.newEventPanel.Controls.Add(this.finishEventButton);
+            this.newEventPanel.Controls.Add(this.descriptionBox);
+            this.newEventPanel.Controls.Add(this.label25);
+            this.newEventPanel.Controls.Add(this.endTimeBox);
+            this.newEventPanel.Controls.Add(this.startTimeBox);
+            this.newEventPanel.Controls.Add(this.label24);
+            this.newEventPanel.Controls.Add(this.label23);
+            this.newEventPanel.Controls.Add(this.label22);
+            this.newEventPanel.Controls.Add(this.eventNameBox);
+            this.newEventPanel.Location = new System.Drawing.Point(176, 183);
+            this.newEventPanel.Name = "newEventPanel";
+            this.newEventPanel.Size = new System.Drawing.Size(563, 389);
+            this.newEventPanel.TabIndex = 2;
+            // 
+            // eventNameBox
+            // 
+            this.eventNameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.eventNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.eventNameBox.Location = new System.Drawing.Point(133, 80);
+            this.eventNameBox.Name = "eventNameBox";
+            this.eventNameBox.Size = new System.Drawing.Size(100, 23);
+            this.eventNameBox.TabIndex = 0;
+            this.eventNameBox.Text = "New Event";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label22.Location = new System.Drawing.Point(15, 80);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(100, 20);
+            this.label22.TabIndex = 3;
+            this.label22.Text = "Event Name:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label23.Location = new System.Drawing.Point(15, 136);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(93, 20);
+            this.label23.TabIndex = 4;
+            this.label23.Text = "Event Start:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label24.Location = new System.Drawing.Point(15, 195);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(87, 20);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Event End:";
+            // 
+            // startTimeBox
+            // 
+            this.startTimeBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.startTimeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.startTimeBox.Location = new System.Drawing.Point(133, 133);
+            this.startTimeBox.Name = "startTimeBox";
+            this.startTimeBox.Size = new System.Drawing.Size(100, 23);
+            this.startTimeBox.TabIndex = 6;
+            // 
+            // endTimeBox
+            // 
+            this.endTimeBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.endTimeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.endTimeBox.Location = new System.Drawing.Point(133, 192);
+            this.endTimeBox.Name = "endTimeBox";
+            this.endTimeBox.Size = new System.Drawing.Size(100, 23);
+            this.endTimeBox.TabIndex = 7;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label25.Location = new System.Drawing.Point(276, 80);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(138, 20);
+            this.label25.TabIndex = 8;
+            this.label25.Text = "Event Description:";
+            // 
+            // descriptionBox
+            // 
+            this.descriptionBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.descriptionBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.descriptionBox.Location = new System.Drawing.Point(280, 120);
+            this.descriptionBox.Multiline = true;
+            this.descriptionBox.Name = "descriptionBox";
+            this.descriptionBox.Size = new System.Drawing.Size(198, 146);
+            this.descriptionBox.TabIndex = 9;
+            // 
+            // finishEventButton
+            // 
+            this.finishEventButton.Location = new System.Drawing.Point(444, 339);
+            this.finishEventButton.Name = "finishEventButton";
+            this.finishEventButton.Size = new System.Drawing.Size(75, 23);
+            this.finishEventButton.TabIndex = 10;
+            this.finishEventButton.Text = "Finish";
+            this.finishEventButton.UseVisualStyleBackColor = true;
+            this.finishEventButton.Click += new System.EventHandler(this.finishEventButton_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(16, 229);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(129, 26);
+            this.label26.TabIndex = 11;
+            this.label26.Text = "Give times in 2400 format.\r\n(1130) = 11:30 AM";
+            // 
+            // cancelNewEventButton
+            // 
+            this.cancelNewEventButton.Location = new System.Drawing.Point(19, 22);
+            this.cancelNewEventButton.Name = "cancelNewEventButton";
+            this.cancelNewEventButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelNewEventButton.TabIndex = 12;
+            this.cancelNewEventButton.Text = "Cancel";
+            this.cancelNewEventButton.UseVisualStyleBackColor = true;
+            this.cancelNewEventButton.Click += new System.EventHandler(this.cancelNewEventButton_Click);
+            // 
             // Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1797, 1019);
+            this.ClientSize = new System.Drawing.Size(1155, 765);
+            this.Controls.Add(this.newEventPanel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Manager";
             this.Text = "Manager";
@@ -1599,6 +1778,10 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            this.meetingsBox.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
+            this.tableLayoutPanel9.ResumeLayout(false);
             this.editEventBox.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
@@ -1616,12 +1799,10 @@
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            this.meetingsBox.ResumeLayout(false);
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
-            this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
+            this.newEventPanel.ResumeLayout(false);
+            this.newEventPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1732,5 +1913,17 @@
         private System.Windows.Forms.Button logoutButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Panel newEventPanel;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox eventNameBox;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox endTimeBox;
+        private System.Windows.Forms.TextBox startTimeBox;
+        private System.Windows.Forms.TextBox descriptionBox;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button finishEventButton;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Button cancelNewEventButton;
     }
 }
