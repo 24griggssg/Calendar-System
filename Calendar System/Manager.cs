@@ -17,14 +17,17 @@ namespace Calendar_System
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
-        {
+        private void button_Click(object sender, EventArgs e) {
+            Button button = (Button)sender;
 
+            int day = Int32.Parse(button.Name.Substring(6));
+
+            MessageBox.Show("Selected Day " + day);
         }
     }
 }
