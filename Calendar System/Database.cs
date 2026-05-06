@@ -13,6 +13,7 @@ namespace Calendar_System
     {
         private String connectionString = "server=csitmariadb.eku.edu;user=student;password=Maroon@21?;database=csc340_db;";
         //test connection to database
+        //author: Harrison Mesplay
         public bool TestConnection()
         {
             try
@@ -33,6 +34,7 @@ namespace Calendar_System
             
         }
         //login function that checks the database for the username and password and returns a tuple with the success of the login, if the user is a manager, and the employee ID
+        //author: Harrison Mesplay
         public (bool success, bool isManager, int userID) Login(string username, string password)
         {
             try
@@ -61,6 +63,8 @@ namespace Calendar_System
             }
             return (false, false, -1);
         }
+        //gets all events for a user on a specific date, used in the calendar form when a user clicks on a date to show them all events they have on that date
+        //author: Harrison Mesplay
         public List<Event> GetEventsForUserOnDate(int userID, DateTime date)
         {
             List<Event> events = new List<Event>();
@@ -111,6 +115,7 @@ namespace Calendar_System
         //checks if the user has any events on the selected date, returns true if they do and false if they don't
         //was suppose to be user in the calendar form but made the program super laggy having to check the database for every day on the calendar,
         //so instead we will just check if the user has any events on the selected date when they click on a date in the calendar
+        //author: Harrison Mesplay
         public bool HasEventOnDate(int userID, DateTime date)
         {
             try
@@ -143,6 +148,8 @@ namespace Calendar_System
                 return false;
             }
         }
+        //gets all events for a user in a specific month, used in the calendar form to show the user all events they have in a month when they click on the month name
+        //author: Harrison Mesplay
         public List<Event> GetEventsForUserInMonth(int userID, int month, int year)
         {
             List<Event> events = new List<Event>();
@@ -192,6 +199,8 @@ namespace Calendar_System
 
             return events;
         }
+        //adds an event to the database and adds the current user as a participant in the event, used in the create event form when a user creates a new event
+        //author: Harrison Mesplay
         public void AddEvent(int userID, string title, DateTime startTime, DateTime endTime, string description)
         {
             try

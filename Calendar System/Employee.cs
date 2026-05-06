@@ -47,6 +47,7 @@ namespace Calendar_System
             this.Load += MainMenu_Load;
         }
         //load meetings for current day
+        //author: Harrison Mesplay
         private void MainMenu_Load(object sender, EventArgs e)
         {
             selectedDate = currentDateTime.Date;
@@ -57,6 +58,7 @@ namespace Calendar_System
             LoadMeetingsForSelectedDate();
         }
         //create calendar buttons
+        //author: Harrison Mesplay
         private void BuildCalendar()
         {
             calendarButtons.Clear();
@@ -109,6 +111,8 @@ namespace Calendar_System
 
             monthL.Text = currentDateTime.ToString("MMMM yyyy");
         }
+        //update calendar button colors based on rules
+        //author: Harrison Mesplay
         private void UpdateCalendar()
         {
             foreach (var btn in calendarButtons)
@@ -156,6 +160,7 @@ namespace Calendar_System
             }
         }
         //check if there are meetings on a given date
+        //author: Harrison Mesplay
         private bool HasEventOnDate(DateTime date)
         {
             foreach (Event e in allEvents)
@@ -168,6 +173,7 @@ namespace Calendar_System
             return false;
         }
         //load meetings for selected date when date button is clicked
+        //author: Harrison Mesplay
         private void DateButton_Click(object sender, EventArgs e)
         {
             //button ref
@@ -197,6 +203,8 @@ namespace Calendar_System
             editEventBox.Hide();
             selectedDayBox.Show();
         }
+        //load meetings for selected date and create buttons for each meeting
+        //author: Harrison Mesplay
         private void LoadMeetingsForSelectedDate()
         {
             //find meetings on selected date
@@ -230,12 +238,16 @@ namespace Calendar_System
                 meetingListBox.Controls.Add(btn);
             }
         }
+        //show meeting details when meeting button is clicked
+        //author: Harrison Mesplay
         private void meetingButton_Click(object sender, EventArgs e)
         {
             Button clicked = sender as Button;
             Event selectedEvent = clicked.Tag as Event;
             showMeetingsDetails(selectedEvent);
         }
+        //show meeting details in selectedMeetingBox
+        //author: Harrison Mesplay
         private void showMeetingsDetails(Event e)
         {
             //switch panels
@@ -313,6 +325,7 @@ namespace Calendar_System
             addEventBox.Hide();
             selectedDayBox.Show();
         }
+        //user clicks confirm after filling out edit event form
         private void editEventB_Click(object sender, EventArgs e)
         {
             selectedMeetingBox.Hide();
@@ -320,6 +333,7 @@ namespace Calendar_System
             addEventBox.Hide();
             editEventBox.Show();
         }
+        //user clicks delete event button
         private void deleteEventB_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to delete this meeting?", "Confirm Delete", MessageBoxButtons.YesNo);
@@ -328,6 +342,8 @@ namespace Calendar_System
                 MessageBox.Show("Meeting deleted.");
             }
         }
+        //user clicks previous month button
+        //author: Harrison Mesplay
         private void prevMonth_Click(object sender, EventArgs e)
         {
             currentDateTime = currentDateTime.AddMonths(-1);
@@ -343,6 +359,8 @@ namespace Calendar_System
             UpdateCalendar();
             LoadMeetingsForSelectedDate();
         }
+        //user clicks next month button
+        //author: Harrison Mesplay
         private void nextMonth_Click(object sender, EventArgs e)
         {
             currentDateTime = currentDateTime.AddMonths(1);
@@ -358,6 +376,8 @@ namespace Calendar_System
             UpdateCalendar();
             LoadMeetingsForSelectedDate();
         }
+        //user clicks logout button
+        //author: Harrison Mesplay
         private void logoutButton_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure you want to logout?", "Confirm", MessageBoxButtons.YesNo);
@@ -369,7 +389,8 @@ namespace Calendar_System
                 new Login().Show();
             }
         }
-
+        //user clicks cancel button on add event form
+        //author: Harrison Mesplay
         private void addCancel_Click(object sender, EventArgs e)
         {
             //switch back to day view

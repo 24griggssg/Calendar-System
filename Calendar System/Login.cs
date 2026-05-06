@@ -19,6 +19,7 @@ namespace Calendar_System
             InitializeComponent();
         }
         //login button
+        //author: Harrison Mesplay
         private void confirmButton_Click(object sender, EventArgs e)
         {
             String inputUsername = textBox1.Text;
